@@ -3,21 +3,27 @@
 ## Project Description
 The CD Calculator is a web-based application that helps users calculate the final balance and interest earned on a Certificate of Deposit (CD). It provides accurate results based on deposit amount, interest rate, investment period, and compounding frequency.
 
-## Features
+## Original Features
 - Calculate Final Balance
 - Calculate Total Interest Earned
-- Maturity Date Calculation
-- Interest Growth Table
-- Investment Summary
+- Certificate of Deposit (CD) Calculation
+- Investment Period (Years & Months)
+- Compound Interest Calculation
+- Multiple Compounding Options (Yearly, Semi-Annual, Quarterly, Monthly, Daily)
 - Multiple Currency Support (USD, PKR, EUR)
-- Compare Two CD Plans
+
+## Additional Features
+- Maturity Date Calculation
+- Investment Summary
+- Interest Growth Table
 - Calculation History
 - Local Storage Support
+- Compare Two CD Plans
 - Dark Mode
 - Download Report as PDF
 - Download Report as CSV
-- Responsive Design
-
+- Responsive User Interface
+- 
 ## Technologies Used
 - HTML5
 - CSS3
@@ -40,8 +46,8 @@ CD-Calculator/
 │── README.md
 ```
 
-## Team Members
-- Asawir
+## Developer
+- Asawar Fayaz
 
 ## Future Improvements
 - Graph Visualization
