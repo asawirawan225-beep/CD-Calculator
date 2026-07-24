@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Calculator</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+       <h1>💰 Certificate of Deposit (CD) Calculator</h1>
+<p class="subtitle">
+Plan your savings and calculate your CD investment returns easily.
+</p>
+        <button type="button" id="darkModeBtn"> Dark Mode</button>
+        <form id="cdCalculator">
+
+            <div class="input-grid">
+
+    <div>
+        <label>💰 Initial Deposit</label>
+        <input type="number" id="deposit">
+    </div>
+
+    <div>
+        <label>📈 Interest Rate (%)</label>
+        <input type="number" id="rate">
+    </div>
+
+    <div>
+        <label>📅 Years</label>
+        <input type="number" id="years">
+    </div>
+
+    <div>
+        <label>🗓️ Months</label>
+        <input type="number" id="months">
+    </div>
+
+    <div>
+        <label>🌍 Currency</label>
+            <select id="currency">
+    <option value="$">USD ($)</option>
+    <option value="Rs">PKR (Rs)</option>
+    <option value="€">EUR (€)</option>
+</select>
+
+    </div>
+
+    <div>
+        <label>🏦 Compounding</label>
+        <select id="compound">
+             <option value="1">Yearly</option>
+            <option value="2">Semi-Annually</option>
+            <option value="4">Quarterly</option>
+            <option value="12">Monthly</option>
+            <option value="365">Daily</option>
+            </div>
+            </select>
+    </div>
+           
+            <div class="button-group">
+            <button type="button" id="calculate">Calculate</button>
+            <button type="reset" id="resetBtn">Reset</button>
+            </div>
+        </form>
+        <div id="result">
+
+    <div class="result-card">
+        <h3>💰 Final Balance</h3>
+        <p id="finalBalance">0</p>
+    </div>
+
+    <div class="result-card">
+        <h3>📈 Total Interest Earned</h3>
+        <p id="interestEarned">0</p>
+    </div>
+
+    <div class="result-card">
+        <h3>📅 Maturity Date</h3>
+        <p id="maturityDate">-</p>
+    </div>
+
+</div>
+<div id="summaryBox">
+    <h2>📋 Investment Summary</h2>
+    <p id="summaryText">No calculation yet.</p>
+</div>
+            <br>
+            <h2>Interest Growth Table</h2>
+            <table border="1" id="growthTable">
+                <thead>
+                    <tr>
+                        <th>Years</th>
+                        <th>Balance</th>
+                        <th>Interest Earned</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+
+            </table>
+            <br>
+            <h2>Calculation History</h2>
+            <ul id="historyList"></ul>
+            <button type="button" id="clearHistory">Clear History</button>
+            <h2>Compare Two CD Plans</h2>
+
+<div class="compare-section">
+
+    <h3>Plan A</h3>
+
+    <input type="number" id="depositA" placeholder="Deposit">
+    <input type="number" id="rateA" placeholder="Interest Rate (%)">
+    <input type="number" id="yearsA" placeholder="Years">
+
+    <h3>Plan B</h3>
+
+    <input type="number" id="depositB" placeholder="Deposit">
+    <input type="number" id="rateB" placeholder="Interest Rate (%)">
+    <input type="number" id="yearsB" placeholder="Years">
+
+    <button type="button" id="compareBtn">Compare Plans</button>
+
+    <h3>Comparison Result</h3>
+
+    <p id="compareResult"></p>
+    <button type="button" id="downloadPdf">Download PDF</button>
+    <button type="button" id="downloadCSV">Download CSV</button>
+
+</div>
+<footer>
+    <p>© 2026 CD Calculator | Developed by Your Team</p>
+</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
